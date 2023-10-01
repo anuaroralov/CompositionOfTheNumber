@@ -16,7 +16,7 @@ import com.anuar.compositionofthenumber.domain.useCase.GetGameSettingsUseCase
 
 class GameViewModel(application: Application) : AndroidViewModel(application) {
 
-    private lateinit var gameSettings: GameSettings
+    lateinit var gameSettings: GameSettings
     private lateinit var level: Level
 
     private val context = application
@@ -59,7 +59,7 @@ class GameViewModel(application: Application) : AndroidViewModel(application) {
     val gameResult: LiveData<GameResult>
         get() = _gameResult
 
-    private var countOfRightAnswers = 0
+    var countOfRightAnswers = 0
     private var countOfQuestions = 0
 
     fun startGame(level: Level) {

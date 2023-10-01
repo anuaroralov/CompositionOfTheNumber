@@ -49,7 +49,7 @@ object GameRepositoryImpl:GameRepository {
                     30,
                     30,
                     90,
-                    40
+                    10
                 )
             }
         }
